@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estils_joc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Sarah Schmidt</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="header nav nav-brand" id="header">
+            <div id="header_left">
+                <a href="index.php">
+                    <h2 id="h2_header">Sarah Schmidt</h2>
+                    <h3 id="h3_header">Data Modeler</h3>
+                </a>
+            </div>
+        </nav>
+
+        <div class="content-box" id="joc">
+            <div class="row justify-content-center">
+                <h1 id="titol">¿Piedra, papel o tijera?</h1>
+            </div>
+            <p class="primera_part text-center">¿Jugamos al famoso juego "piedra, papel o tijera"? </p>
+            <p class="primera_part">Todos jugamos a “Piedra, papel o tijera” en nuestra infancia, sea por placer, sea por decidir quién de dos personas hará qué cosa. Existen tres elementos en el juego: 1)
+                <b>la piedra que vence a la tijera</b> rompiéndola, 2) <b>la tijera que vence al papel</b> cortándolo y 3) <b>el papel que vence a la piedra</b> envolviéndola. ¿Te atreves a jugar contra el ordenador? <b>Elige una de las tres opciones</b>.
+                El ordenador elegirá de manera aleatoria una opción. ¡Mucha suerte!</p>
+            <div class="d-flex justify-content-around seleccio">
+                <button class="btn p-4 bg-secondary" id="j_0">PIEDRA</button>
+                <button class="btn p-4 bg-secondary" id="j_1">PAPEL</button>
+                <button class="btn p-4 bg-secondary" id="j_2">TIJERA</button>
+            </div>
+            <div class="segona_part p-4 text-center">¿Quién ha elegido qué cosa? ...</div>
+            <div class="d-flex justify-content-center">
+                <div class="p-3 bg-warning" id="ordSeleccionat">
+                    <span>Ordenador: </span>
+                    <span id="resultatOrd">?</span>
+                </div>
+                <div class="p-3 bg-success" id="jugSeleccionat">
+                    <span>Jugador: </span>
+                    <span id="resultatJug">?</span>
+                </div>
+            </div>
+            <div class="segona_part p-4 text-center">Y el ganador de este turno es: <b><span id="guanyador">?</span></b></div>
+            <div class="d-flex justify-content-around estatistica">
+                <div>
+                    <span class="destacar">Partidas:</span>
+                    <span id="partitsTotal">0</span>
+                </div>
+                <div>
+                    <span class="destacar">Ordenador:</span>
+                    <span id="partitsOrd">0</span>
+                </div>
+                <div>
+                    <span class="destacar">Jugador:</span>
+                    <span id="partitsJug">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p id="copyright">&copy; Copyright 2020 Sarah Schmidt</p>
+    </div>
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="js/joc.js"></script>
+</body>
+
+</html>

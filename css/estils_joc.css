@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.wrapper {
+    flex: 1 0 auto;
+}
+
+.content-box {
+    width: 80%;
+    margin: auto;
+}
+
+
+/* ************************* Elements content box ************************* */
+
+h1 {
+    font-size: 3em;
+    font-weight: 600;
+    padding: 0 .5em;
+}
+
+h2 {
+    font-size: 1.9em;
+    color: #7E828B;
+    font-weight: 600;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: italic;
+}
+
+#h2_header {
+    font-size: 1.5em;
+    color: white;
+}
+
+#h3_header {
+    font-size: 1em;
+    color: white;
+    margin-top: -12px;
+}
+
+.seleccio {
+    padding-top: 1.5em;
+}
+
+#jugSeleccionat,
+#ordSeleccionat {
+    border-radius: 5px;
+    margin: -.5em 0;
+}
+
+#iniciar {
+    margin: 1em 0 2em;
+    align-content: center;
+}
+
+.estatistica {
+    padding-top: 1.5em;
+}
+
+.destacar {
+    font-weight: 700;
+}
+
+#ordSeleccionat {
+    margin-right: 2em;
+}
+
+
+/* ************************* Header & Footer ************************* */
+
+.header,
+.footer {
+    padding: 1.3em;
+    background-color: black;
+    color: white;
+}
+
+#footer {
+    flex-shrink: 0;
+}
+
+#header {
+    margin-bottom: 2em;
+}
+
+.header a {
+    display: inline-block;
+}
+
+.header a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.header a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.header a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.header a:active {
+    color: white;
+    text-decoration: none;
+}
+
+#copyright {
+    margin-bottom: -1px;
+    font-size: 1em;
+    color: white;
+}
